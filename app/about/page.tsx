@@ -43,7 +43,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-[400px]">
               <Image
-                 src="/electrician1.webp"  
+                src="/electrician.webp"  
                 alt="Electrician at work"
                 fill
                 className="object-cover rounded-lg"
