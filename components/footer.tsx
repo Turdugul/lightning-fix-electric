@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { Zap, Phone, Mail, MapPin } from "lucide-react";
 
-export function Footer() {
+export const Footer =() =>{
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <Link href="/" className="flex items-center">
@@ -52,7 +52,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center text-gray-400">
                 <Phone className="h-5 w-5 mr-2" />
-                (555) 123-4567
+                (777) 123-4567
               </li>
               <li className="flex items-center text-gray-400">
                 <Mail className="h-5 w-5 mr-2" />
@@ -60,7 +60,7 @@ export function Footer() {
               </li>
               <li className="flex items-center text-gray-400">
                 <MapPin className="h-5 w-5 mr-2" />
-                123 Main St, Anytown, USA
+                123 Main St, London, UK
               </li>
             </ul>
           </div>

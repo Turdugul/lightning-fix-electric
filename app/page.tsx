@@ -9,6 +9,7 @@ import {
   Clock,
   CheckCircle2
 } from "lucide-react";
+import { Reviews } from "@/components/Reviews";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[600px]">
         <Image
-          src="/light.jpg"  
+          src="/light.jpg"
           alt="Electrician at work"
           fill
           className="object-cover"
@@ -35,7 +36,7 @@ export default function Home() {
                 <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600">
                   <Link href="/contact">Get a Free Quote</Link>
                 </Button>
-                <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-black">
+                <Button size="lg" variant="outline" className="text-yellow-500 border-white hover:bg-white hover:text-black">
                   <Link href="/about">Learn More</Link>
                 </Button>
               </div>
@@ -120,6 +121,8 @@ export default function Home() {
         </div>
       </section>
 
+      <Reviews/>
+
       {/* CTA Section */}
       <section className="bg-yellow-500 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -134,6 +137,7 @@ export default function Home() {
           </Button>
         </div>
       </section>
+     
     </div>
   );
 }

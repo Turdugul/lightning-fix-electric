@@ -21,6 +21,7 @@ import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { Separator } from "@/components/ui/separator";
 
+
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
   email: z.string().email("Please enter a valid email address"),
@@ -41,7 +42,8 @@ export default function ContactPage() {
   });
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
-    // Here you would typically send the form data to your backend
+    console.log(values, 'form value')
+    // Here you would  send the form data to your backend
     toast({
       title: "Message Sent!",
       description: "We'll get back to you as soon as possible.",
@@ -50,7 +52,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen mt-4 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
@@ -71,7 +73,7 @@ export default function ContactPage() {
                   <Phone className="h-6 w-6 text-yellow-500" />
                   <div>
                     <Label>Phone</Label>
-                    <p className="text-gray-600">(555) 123-4567</p>
+                    <p className="text-gray-600">(777) 123-4567</p>
                   </div>
                 </div>
                 <Separator />
@@ -87,7 +89,7 @@ export default function ContactPage() {
                   <MapPin className="h-6 w-6 text-yellow-500" />
                   <div>
                     <Label>Address</Label>
-                    <p className="text-gray-600">123 Main St, Anytown, USA</p>
+                    <p className="text-gray-600">123 Main St, London, UK</p>
                   </div>
                 </div>
               </CardContent>
