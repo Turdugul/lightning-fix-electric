@@ -5,11 +5,10 @@ import { Card } from "@/components/ui/card";
 import { 
   Lightbulb, 
   Wrench, 
-  Shield, 
-  Clock,
-  CheckCircle2
+  Shield
 } from "lucide-react";
 import { Reviews } from "@/components/Reviews";
+import ChooseUs from "@/components/ChooseUS";
 
 export default function Home() {
   return (
@@ -82,45 +81,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Why Choose Us Section */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Why Choose Us</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              We pride ourselves on providing exceptional service and customer satisfaction.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="flex flex-col items-center text-center">
-              <CheckCircle2 className="h-12 w-12 text-yellow-500 mb-4" />
-              <h3 className="text-lg font-semibold mb-2">Licensed & Insured</h3>
-              <p className="text-gray-600">Fully licensed and insured for your peace of mind.</p>
-            </div>
-
-            <div className="flex flex-col items-center text-center">
-              <Clock className="h-12 w-12 text-yellow-500 mb-4" />
-              <h3 className="text-lg font-semibold mb-2">24/7 Emergency Service</h3>
-              <p className="text-gray-600">Available around the clock for emergency repairs.</p>
-            </div>
-
-            <div className="flex flex-col items-center text-center">
-              <Shield className="h-12 w-12 text-yellow-500 mb-4" />
-              <h3 className="text-lg font-semibold mb-2">Quality Guaranteed</h3>
-              <p className="text-gray-600">All work backed by our satisfaction guarantee.</p>
-            </div>
-
-            <div className="flex flex-col items-center text-center">
-              <Wrench className="h-12 w-12 text-yellow-500 mb-4" />
-              <h3 className="text-lg font-semibold mb-2">Experienced Team</h3>
-              <p className="text-gray-600">Years of experience in electrical services.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <ChooseUs/>
       <Reviews/>
 
       {/* CTA Section */}
