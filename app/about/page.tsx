@@ -8,7 +8,6 @@ import Image from "next/image";
 export default function AboutPage() {
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Hero Section */}
       <section className="relative h-[400px]">
         <Image
           src="/testing-electr.webp"  
@@ -27,7 +26,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Company Story */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -55,7 +53,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Values */}
       <section className="bg-gray-50 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12">Our Values</h2>
