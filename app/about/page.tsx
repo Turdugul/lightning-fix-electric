@@ -11,7 +11,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative h-[400px]">
         <Image
-          src="/el.jpg"  
+          src="/testing-electr.webp"  
           alt="Electrician team"
           fill
           className="object-cover"
@@ -45,7 +45,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-[400px]">
               <Image
-                 src="/el.jpg"  
+                 src="/electrician1.webp"  
                 alt="Electrician at work"
                 fill
                 className="object-cover rounded-lg"

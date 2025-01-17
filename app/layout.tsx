@@ -27,7 +27,7 @@ export default function RootLayout({
       <body className={inter.className}>
    
         <Header/>
-        <main className="min-h-screen mt-40">{children}</main>
+        <main className="min-h-screen mt-36">{children}</main>
         <Footer />
         <Toaster />
      

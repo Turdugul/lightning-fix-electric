@@ -32,16 +32,16 @@ export const Header = () => {
   return (
     <header className="w-full fixed top-0 left-0 z-[111] bg-white shadow-2xl">
       {/* Top Bar */}
-      <div className=" w-full flex flex-col items-start md:flex-row justify-end gap-2 md:gap-10 bg-gray-800 p-6 md:px-6">
+      <div className=" w-full flex flex-col items-start md:flex-row justify-end gap-2 md:gap-10 bg-gray-800 p-4 md:px-6">
         <Link href="/contact" className="flex  items-center flex-row text-white">
-          <MailCheck className=" h-8 w-8 md:h-14 md:w-14 mr-2" />
+          <MailCheck className=" h-8 w-8 md:h-10 md:w-14 mr-2" />
           <div className="flex items-start justify-start flex-col">
             <p className="text-sm">Contact Us</p>
             <span> info@eliteelectrical.com</span>
           </div>
         </Link>
         <Link href="tel:0777888999" className="flex items-center gap-2 flex-row text-white">
-          <PhoneCall className="h-8 w-8 md:h-14 md:w-14" />
+          <PhoneCall className="h-8 w-8 md:h-10 md:w-14" />
           <div className="flex items-start justify-start flex-col">
             <p className="text-sm">Call Us</p>
             <Button
@@ -72,7 +72,7 @@ export const Header = () => {
                 key={link.name}
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0.1 }}
                 className="relative"
               >
                 <Link
@@ -129,7 +129,7 @@ export const Header = () => {
                 key={link.name}
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0.1 }}
                 className="relative"
               >
                 <Link
