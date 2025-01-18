@@ -6,16 +6,16 @@ import { Toaster } from '@/components/ui/toaster';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/TempFooter';
 
-
-
-
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Elite Electrical Services | Professional Electrician Solutions',
-  description: 'Professional electrical services including installations, repairs, and maintenance. Licensed and insured electricians serving your area.',
-  keywords: 'electrician, electrical services, electrical repairs, electrical installation, emergency electrician, licensed electrician',
+  description:
+    'Professional electrical services including installations, repairs, and maintenance. Licensed and insured electricians serving your area.',
+  keywords:
+    'electrician, electrical services, electrical repairs, electrical installation, emergency electrician, licensed electrician',
 };
+
 
 export default function RootLayout({
   children,
@@ -23,9 +23,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning={true}>
       <body className={inter.className}>
-        <Header/>
+        <Header />
         <main className="min-h-screen mt-36">{children}</main>
         <Footer />
         <Toaster />

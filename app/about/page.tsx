@@ -14,7 +14,7 @@ export default function AboutPage() {
           alt="Electrician team"
           fill
           className="object-cover"
-          priority
+          priority={true}
         />
         <div className="absolute inset-0 bg-black bg-opacity-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
@@ -43,10 +43,11 @@ export default function AboutPage() {
             </div>
             <div className="relative h-[400px]">
               <Image
-                src="/electrician.webp"  
+                src="/electrician-man.webp"
                 alt="Electrician at work"
                 fill
                 className="object-cover rounded-lg"
+                priority={true}
               />
             </div>
           </div>
