@@ -24,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className={inter.className}>
+      <body className={inter.className} data-new-gr-c-s-check-loaded="14.1217.0" data-gr-ext-installed="">
         <Header />
         <main className="min-h-screen mt-36">{children}</main>
         <Footer />
